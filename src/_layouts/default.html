@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; {{site.time | date: '%Y'}} Webis">
+    <link rel="icon" type="image/png" href="{{ '/img/coral-logo.png' | relative_url }}">
+
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}?{{site.time | date: '%s'}}">
+    {% for css in page.additional_css %}
+    <link rel="stylesheet" href="{{ css | relative_url }}?{{site.time | date: '%s'}}">
+    {% endfor %}
+</head>
+<body class="uk-offcanvas-content page-{{ page.nav_active }}">
+<script src="https://assets.webis.de/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="https://assets.webis.de/js/thirdparty/uikit/uikit-icons.min.js"></script>
+<script src="https://assets.webis.de/js/thirdparty/jquery/jquery.min.js"></script>
+<script src="https://assets.webis.de/js/thirdparty/code-prettify/prettify.js"></script>
+<script src="https://assets.webis.de/js/thirdparty/code-prettify/lang-proto.js"></script>
+<script src="https://assets.webis.de/js/thirdparty/code-prettify/lang-wiki.js"></script>
+<script src="https://assets.webis.de/js/thirdparty/code-prettify/lang-yaml.js"></script>
+<script src="https://assets.webis.de/js/code-prettify/lang-cmd.js"></script>
+
+<div class="uk-background-default">
+    <div class="uk-container">
+        <div class="uk-grid-small uk-grid-match" uk-grid>
+            <div>
+            <a href="{{ '/index.html' | relative_url }}">
+                <img class="uk-height-small" src="{{ '/img/CORAL-logo-large.svg' | relative_url }}" 
+                    alt="Coral Logo">    
+            </a>
+            </div>
+            <div class="uk-width-expand uk-text-emphasis">
+                <!-- Use this space for a title -->
+                <!-- <h1 class="uk-margin-medium-top">
+                Fundierte Sprachmodelle auf proprietären Daten</h1> -->
+            </div>
+            <div class="uk-height-small">
+            <a href="https://www.softwaresysteme.dlr-pt.de/de/machine-learning-modelle.php#ui-id-9" target="_blank">
+                <img class="header-logo" src="{{ '/img/logo-pt.png' | relative_url }}" 
+                    alt="DLP Projektträger Logo">    
+            </a>
+            </div>
+            <div>
+                <a href="https://www.bmbf.de/DE/Home/home_node.html" target="_blank">
+                    <img class="uk-height-small" src="{{ '/img/BMBF_gefoerdert_2017_en.jpg' | relative_url }}" alt="Sponsored by the Federal Ministry of Education and Research">  
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-background-muted" data-uk-height-viewport="expand: true">
+    {{ content }}
+</div>
+
+<footer class="uk-section uk-section-muted footer-section">
+    <div class="uk-container">
+        <div class="uk-grid uk-grid-small uk-margin-top">
+            <div class="uk-width-expand uk-visible@s"></div>
+            <div>
+              &copy; {{site.time | date: '%Y'}} Coral Project
+              <span class="uk-padding-small">&bullet;</span>
+              <a href="https://github.com/coral-project">
+                <span data-uk-icon="icon: github; ratio:0.8"></span></a>
+                <span class="uk-padding-small">&bullet;</span>
+              <a href="{{ '/legal.html' | relative_url }}">Impressum / Terms / Privacy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        PR.prettyPrint();
+
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+
+    // Google analytics
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70770005-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+.page-header-meta {
+  color: $global-muted-color;
+  font-size: 1.1rem;
+}
+
+.task-chair-organizations {
+  text-align: center;
+
+  @media (min-width: $breakpoint-large) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & > * {
+    height: 60px;
+    display: inline-block;
+    padding: $padding-large-padding;
+  }
+
+  img, svg {
+    height: 100%;
+  }
+
+  .logo-font {
+    display: inline-block;
+    padding-left: $padding-small-padding;
+    font-size: 2.5em;
+    vertical-align: middle;
+    color: lighten($global-color, 20);
+  }
+}
+
+.semeval-logo {
+  font-size: 70px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.keynote {
+  margin-bottom: $global-medium-gutter;
+
+  .keynote-speaker-image, .keynote-meta {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .keynote-speaker-image {
+    padding-right: 1.5 * $global-small-padding;
+
+    img {
+      height: 100px;
+      width: 85px;
+      max-width: none;
+      object-fit: cover;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .keynote-title {
+    font-size: $text-lead-font-size;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .keynote-speaker {
+    text-align: left;
+    color: $global-muted-color;
+    font-size: $text-small-font-size;
+    display: inline;
+  }
+
+  .keynote-affiliation {
+    &:before {
+      content: " • ";
+      padding: 0 5px;
+    }
+
+    color: $global-muted-color;
+    display: inline;
+  }
+
+  .keynote-body {
+    margin-top: $global-small-padding;
+  }
+
+  footer {
+    color: $global-muted-color;
+    font-style: italic;
+
+    .keynote-bio {
+      p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: 5px;
+      }
+
+      .read-more {
+        display: block;
+      }
+
+      .read-less {
+        display: none;
+      }
+
+      &.expanded {
+        .read-more {
+          display: none;
+        }
+
+        .read-less {
+          display: block;
+        }
+
+        p {
+          overflow: visible;
+          white-space: normal;
+        }
+      }
+    }
+  }
+}

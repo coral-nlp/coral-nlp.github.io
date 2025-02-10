@@ -1,0 +1,18 @@
+.page-index {
+    background: $global-secondary-background-lighter url("../img/coral-logo.png") no-repeat top right;
+
+    .footer-section, .footer-section a {
+        color: $inverse-global-color !important;
+        background: none;
+    }
+}
+
+.index-cover {
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+    hyphens: none;
+}
+
+.header-logo {
+    height: 100px;
+}

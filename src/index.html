@@ -1,0 +1,79 @@
+---
+layout: default
+nav_active: index
+title: CORAL Project
+description: CORAL Project.
+---
+
+<main class="uk-section uk-section-default">
+    <div class="uk-container">
+        <div class="uk-container uk-margin-small">
+
+            <h1 class="uk-margin-remove-top">
+                Fundierte Sprachmodelle auf proprietären Daten</h1>
+            <div>
+            <ul class="uk-list">
+                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#goals">Projektziele</a></li>
+                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#publications">Publikationen</a></li>
+                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#partners">Partner</a></li>  
+            </ul>
+            </div>
+        </div>
+
+        <div class="uk-container uk-margin-medium">
+
+            <h2 id="goals">Projektziele</h2>
+            
+            <p>Die Nutzung von Sprachmodellen unterliegt häufig einschränkenden Anforderungen, sogenannten Constraints. Wenn zum Beispiel lizenzrechtlich beschränkte Daten für das Training verwendet wer-den, sollen diese regelmäßig nicht in künstlich generierten Texten reproduziert werden. Aussagen in generierten Texten sollen darüber hinaus anhand von Quellen transparent nachvollziehbar sein. Solche und ähnliche Anforderungen sind für viele Institutionen und Unternehmen unverzichtbar für den produktiven und sicheren Einsatz von Sprachmodellen. Die Frage ist also, ob und wie Constraints bei der Konstruktion von Sprachmodellen berücksichtigt werden können. Genau hier setzt das Forschungsvorhaben „CORAL“ an und will Künstliche Intelligenz flexibler, resilienter und effizienter gestalten.</p>
+
+            <div class="uk-grid-small uk-child-width-1-2" uk-grid>
+                <img class="uk-align-center" src="{{ '/img/CORAL-illustration-small.png' | relative_url }}" alt="Coral Illustration"/>
+
+                <div>
+                    <h3>Vorgehen</h3>
+                    <p>Das Projekt untersucht, ob praktisch nutzbare Sprachmodelle auf Basis von Texten trainiert wer-den können, die nur in verschiedenen eingeschränkten Formen zur Verfügung gestellt werden dürfen. Außerdem werden Methoden entwickelt, um Texte unter Berücksichtigung von Fachwissen mit Quellenangaben zu generieren. Insbesondere soll die Textreproduktion aus den Trainingsdaten vermieden, jedoch vorgegebene Quellen akkurat wiedergeben, werden. Diese Verfahren werden in auf-wendigen Experimenten evaluiert und mit Partnern aus dem Finanzwesen, GLAM-Institutionen (Kultur- und Gedächtnisinstitutionen) und der Privatwirtschaft getestet.</p>
+
+                    <h3>Innovationen und Perspektiven</h3>
+                    <p>Erwartet werden innovative Ergebnisse und Erkenntnisse in drei Kernabschnitten bei der Entwicklung und Nutzung von Sprachmodellen, sowohl in der Gesellschaft, Wissenschaft als auch Industrie: (1) Berücksichtigung bisher eingeschränkter Trainingsdaten; (2) Modellarchitekturen unter Berücksichtigung von Constraints, die u.a. die Reproduktion von Trainingsdaten vermeiden und (3) Verweis auf relevante und verlässliche Quellen, auf die der generierte Text basiert. Durch den exemplarischen Transfer dieser Ansätze werden Flexibilität als auch Effektivität sicher demonstriert.</p>
+                </div>
+            </div>
+
+
+            <h2 id="publications">Publikationen</h2>
+            <p>tba.</p>
+
+            <h2 id="partners">Partner</h2>
+
+            <h3>Institute für Angewandte Informatik e.V.</h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/heyer.html %}
+                {% include people-cards/schroeder.html %}
+                {% include people-cards/stadler.html %}
+                {% include people-cards/binder.html %}
+                {% include people-cards/mueller.html %}
+            </div>
+
+            <h3>University of Kassel</h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/potthast.html %}
+                {% include people-cards/gienapp.html %}
+                {% include people-cards/wiegmann.html %}
+                {% include people-cards/ruth.html %}
+            </div>
+
+            <h3>Hochschule Anhalt</h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/haenig.html %}
+                {% include people-cards/hamotskyi.html %}
+            </div>
+
+            <h3>Deutsche Nationalbibliothek</h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/leinen.html %}
+                {% include people-cards/genet.html %}
+            </div>
+
+
+        </div>
+    </div>
+</main>
