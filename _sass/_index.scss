@@ -1,5 +1,5 @@
 .page-index {
-    background: $global-secondary-background-lighter url("../img/coral-logo.png") no-repeat top right;
+    background: $global-secondary-background-lighter;
 
     .footer-section, .footer-section a {
         color: $inverse-global-color !important;
@@ -15,4 +15,13 @@
 
 .header-logo {
     height: 100px;
+}
+
+.goals-image {
+    float: left;
+
+    img, svg {
+        height: 100%;
+        object-fit: cover;
+    }
 }
