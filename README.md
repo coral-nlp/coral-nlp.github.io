@@ -5,9 +5,8 @@ https://coral-project.github.io
 ### Build the Website Locally
 
 1. Install Ruby and Jekyll: https://jekyllrb.com/docs/installation/
-2. Go to `src/`
-3. Run: `bundle exec jekyll serve --baseurl=""`   
-4. Go to `http://localhost:4000`
+2. Run: `bundle exec jekyll serve --baseurl=""`   
+3. Go to `http://localhost:4000`
 
 ### Add or Change Project Members
 

@@ -1,0 +1,90 @@
+---
+layout: default
+nav_active: index
+title: CORAL Project
+description: CORAL Project.
+---
+
+<main class="uk-section uk-section-default">
+    <div class="uk-container">
+        <div class="uk-container uk-margin-small">
+
+            <h1 class="uk-margin-remove-top">
+                Constrained Retrieval-Augmented Language Models</h1>
+            <div>
+            <ul class="uk-list">
+                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#goals">Project Goals</a></li>
+                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#publications">Publications</a></li>
+                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#partners">Partners</a></li>  
+            </ul>
+            </div>
+        </div>
+
+        <div class="uk-container uk-margin-medium">
+
+            <h2 id="goals">Project Goals</h2>
+            <p>
+              The CORAL project aims to research methods for the construction and use of large language models (LLMs) that are subject to legal, technical, and qualitative constraints. With the fulfillment of legal requirements for the training data of LLMs and the referential provenance of the generated texts, our focus is on two central criteria that are indispensable for the professional use of language models. To this end, we are researching new methods for the constrained training of LLMs and the retrieval augmented generation (RAG) of texts.
+            </p>
+
+            <!-- <p>Die Nutzung von Sprachmodellen unterliegt häufig einschränkenden Anforderungen, sogenannten Constraints. Wenn zum Beispiel lizenzrechtlich beschränkte Daten für das Training verwendet werden, sollen diese regelmäßig nicht in künstlich generierten Texten reproduziert werden. Aussagen in generierten Texten sollen darüber hinaus anhand von Quellen transparent nachvollziehbar sein. Solche und ähnliche Anforderungen sind für viele Institutionen und Unternehmen unverzichtbar für den produktiven und sicheren Einsatz von Sprachmodellen. Die Frage ist also, ob und wie Constraints bei der Konstruktion von Sprachmodellen berücksichtigt werden können. Genau hier setzt das Forschungsvorhaben „CORAL“ an und will Künstliche Intelligenz flexibler, resilienter und effizienter gestalten.</p> -->
+
+            <div class="uk-grid-small uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
+                <img class="uk-preserve-width" src="{{ '/img/coral-illustration-small.png' | relative_url }}" alt="Coral Illustration"/>
+                <div>
+                    <h3>Data</h3>
+                    <!-- <p>Das Projekt untersucht, ob praktisch nutzbare Sprachmodelle auf Basis von Texten trainiert werden können, die nur in verschiedenen eingeschränkten Formen zur Verfügung gestellt werden dürfen. Außerdem werden Methoden entwickelt, um Texte unter Berücksichtigung von Fachwissen mit Quellenangaben zu generieren. Insbesondere soll die Textreproduktion aus den Trainingsdaten vermieden, jedoch vorgegebene Quellen akkurat wiedergeben, werden. Diese Verfahren werden in aufwendigen Experimenten evaluiert und mit Partnern aus dem Finanzwesen, GLAM-Institutionen (Kultur- und Gedächtnisinstitutionen) und der Privatwirtschaft getestet.</p> -->
+                    <p>
+                      CORAL uses data from the partners involved. This includes the digital holdings of the German National Library (DNB), and web crawls from the Internet Archive and the Common Crawl, amounting to petabytes, many years of European-language news crawls from Wortschatz Leipzig, and proprietary data from the financial sector. Apart from the Common Crawl, this data has so far not been usable for training LLMs, as it is not made publicly available in its original form for legal reasons. We are therefore investigating the extent to which this data can be used legally for the training of LLMs in obfuscated form and how far the obfuscation of the data may go in order to construct useful large language models.
+                    </p>
+
+                    <h3>Research Questions</h3>
+                    <p>
+                      Central research questions are: Which training methods and model architectures are robust against data constraints? How resource-efficient can useful large language models be trained? Which methods of obfuscation, un-learning and negated augmentation effectively prevent the disclosure of protected data? How can the transparency and soundness, originality, and referenceability of the generated texts be ensured? How vulnerable are the methods used to secure the training data of LLMs?
+                    </p>
+                    <p>
+                      CORAL is thus making important contributions to the future establishment of a German market for large language models.
+                    </p>
+                    <!-- <p>Erwartet werden innovative Ergebnisse und Erkenntnisse in drei Kernabschnitten bei der Entwicklung und Nutzung von Sprachmodellen, sowohl in der Gesellschaft, Wissenschaft als auch Industrie: (1) Berücksichtigung bisher eingeschränkter Trainingsdaten; (2) Modellarchitekturen unter Berücksichtigung von Constraints, die u.a. die Reproduktion von Trainingsdaten vermeiden und (3) Verweis auf relevante und verlässliche Quellen, auf die der generierte Text basiert. Durch den exemplarischen Transfer dieser Ansätze werden Flexibilität als auch Effektivität sicher demonstriert.</p> -->
+                </div>
+            </div>
+
+
+            <h2 id="publications">Publikations</h2>
+            <p>tba.</p>
+
+            <h2 id="partners">Partners</h2>
+
+            <h3>Institute for Applied Informatics / Institute für Angewandte Informatik e.V.</h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/heyer.html %}
+                {% include people-cards/schroeder.html %}
+                {% include people-cards/stadler.html %}
+                {% include people-cards/binder.html %}
+            </div>
+
+            <h3>University of Kassel / Universität Kassel</h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/potthast.html %}
+                {% include people-cards/gienapp.html %}
+                {% include people-cards/wiegmann.html %}
+                {% include people-cards/ruth.html %}
+            </div>
+
+            <h3>Anhalt University of Applied Sciences / Hochschule Anhalt </h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/haenig.html %}
+                {% include people-cards/hamotskyi.html %}
+                {% include people-cards/gautam.html %}
+            </div>
+
+            <h3>German National Library / Deutsche Nationalbibliothek</h3>
+            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
+                {% include people-cards/leinen.html %}
+                {% include people-cards/genet.html %}
+            </div>
+
+
+        </div>
+    </div>
+</main>
