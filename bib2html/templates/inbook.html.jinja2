@@ -1,0 +1,5 @@
+{{ entry.fields.author }}.
+{%- if entry.fields['booktitle'] %} <span class="booktitle">{{ entry.fields.booktitle }}</span>.{% endif %}
+{%- include 'publications_title.html.jinja2' %}.
+{%- if entry.fields['publisher'] %} <span class="publisher">{{  entry.fields.publisher }}</span>.{% endif %}
+{%- include 'publications_date.html.jinja2' %}.

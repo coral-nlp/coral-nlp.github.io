@@ -1,0 +1,4 @@
+{{ entry.fields.author }}.
+{%- include 'publications_title.html.jinja2' %}.
+{%- if entry.fields['howpublished'] %} <span class="howpublished">{{ entry.fields['howpublished'] }}</span>,{% endif %}
+{%- if entry.fields['year'] %} <span class="year">{{ entry.fields.year }}</span>.{% endif %}

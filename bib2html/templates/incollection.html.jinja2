@@ -1,0 +1,8 @@
+{{ entry.fields.author }}.
+{%- include 'publications_title.html.jinja2' %}.
+{%- if entry.fields.editor %} In {{ entry.fields.editor }}, editors,{% endif %}
+{%- if entry.fields.booktitle %} <span class="booktitle">{{ entry.fields.booktitle }}</span>,{% endif %}
+{%- include 'publications_series.html.jinja2' %}
+{%- if entry.fields.pages %} pages <span class="pages">{{ entry.fields.pages }}</span>,{% endif %}
+{%- if entry.fields.publisher is defined %} <span class="publisher">{{  entry.fields.publisher }}</span>.{% endif %}
+{%- include 'publications_date.html.jinja2' %}.

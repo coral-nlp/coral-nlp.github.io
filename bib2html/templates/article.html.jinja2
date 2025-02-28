@@ -1,0 +1,8 @@
+{{ entry.fields.author }}.
+{%- include 'publications_title.html.jinja2' %}.
+{%- if entry.fields.journal is defined %} <span class="journal">{{ entry.fields.journal }}</span>,{% endif %}
+{%- if entry.fields.volume is defined %} <span class="volume">{{ entry.fields.volume }}</span>{% endif %}
+{%- if entry.fields.number is defined %} ({{ entry.fields.number }}){% endif %}
+{%- if entry.fields.pages is defined %} : <span class="pages">{{ entry.fields.pages }}</span>{% endif %}
+{%- if (entry.fields.volume is defined) or (entry.fields.number is defined) or (entry.fields.pages is defined) %},{% endif %}
+{%- include 'publications_date.html.jinja2' %}.

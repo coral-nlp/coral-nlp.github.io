@@ -1,0 +1,6 @@
+{{ entry.fields.author }}.
+{%- include 'publications_title.html.jinja2' %}.
+{%- if entry.fields['type'] %} <span class="type">{{ entry.fields['type'] }}</span> {% endif %}
+{%- if entry.fields['number'] %} ({{ entry.fields['number'] }}), {% endif %}
+{%- if entry.fields['institution'] %} <span class="institution">{{ entry.fields['institution'] }}</span>, {% endif %}
+{%- include 'publications_date.html.jinja2' %}.

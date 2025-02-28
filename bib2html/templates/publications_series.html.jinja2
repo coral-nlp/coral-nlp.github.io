@@ -1,0 +1,7 @@
+{%- if entry.fields.volume %} volume <span class="volume">{{ entry.fields.volume }}</span>
+  {%- if entry.fields.series %} of <span class="series">{{ entry.fields.series }}</span>{% endif %},
+{%- elif entry.fields.number %} number ({{ entry.fields.number}})
+  {%- if entry.fields.series %} in <span class="series">{{ entry.fields.series }}</span>{% endif %},
+{%- else %}
+  {%- if entry.fields.series %} <span class="series">{{ entry.fields.series }}</span>,{% endif %}
+{%- endif %}

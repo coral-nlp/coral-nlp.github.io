@@ -1,0 +1,19 @@
+{% for year, entries in bib_entries %}
+<div id="year-{{ year }}" class="year-entry">
+  <h3 class="year">{{ year }}</h3>
+    {% for entry in entries -%}
+    <a id="{{ entry.fields['bibid'] }}"></a>
+    <div {% include 'publications_div_attributes.html.jinja2' %}>
+      {%- include entry.type + '.html.jinja2' %}
+      {% for name, value in entry.fields['urls'].items() %}
+          {%- if name == "bib-toggle" %}[<a class="bib-toggle" data-target="bibtex-{{ entry.fields.bibid }}" href="#?q={{ entry.fields.bibid }}">bib</a>]
+          {%- elif name == "copylink" %}[<a class="copylink" href="">copylink</a>]
+          {%- elif name == "publisherurl" %}[<a class="publisher" href="{{ value }}">publisher</a>]
+          {%- elif name != "url" %}[<a class="{{ name }}" href="{%- if name == "doi" %}https://doi.org/{% endif %}{{ value }}">{{ name }}</a>]{% endif %}{% endfor %}
+        
+      <textarea id='bibtex-{{ entry.fields.bibid }}' class='bibtex uk-hidden' readonly>{{ entry.fields.raw }}</textarea>
+    </div>
+    {% endfor %}
+</div>
+<br>
+{% endfor %}

@@ -1,0 +1,1 @@
+python3 bib2html.py ../publications.bib ../_includes/publications.html

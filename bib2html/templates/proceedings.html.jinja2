@@ -1,0 +1,5 @@
+{%- if entry.fields['editor'] %}{{ entry.fields['editor'] }}, editor{% if entry.fields['editor']|length > 1 %}s{% endif %}.{% endif %}
+{%- include 'publications_title.html.jinja2' %},
+{%- include 'publications_series.html.jinja2' %}
+{%- if entry.fields['publisher'] %} <span class="publisher">{{  entry.fields['publisher'] }}</span>, {% endif %}
+{%- include 'publications_date.html.jinja2' %}.
