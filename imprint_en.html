@@ -2,11 +2,13 @@
 layout: default
 nav_active: index
 title: Impressum / Kontakt / Disclaimer
-description: CORAL Project Impressum.
+description: CORAL project imprint.
+lang: en
+page_name: imprint
 ---
 <main class="uk-section uk-section-default" uk-height-viewport="expand: true">
     <div class="uk-container uk-margin-small">
-        <h1 class="uk-margin-remove-top">Impressum / Kontakt / Disclaimer</h1>
+        <h1 class="uk-margin-remove-top">Imprint / Contact / Disclaimer</h1>
         <div>
             <ul class="uk-list">
                 <li><span data-uk-icon="chevron-down" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20"><polyline fill="none" stroke="#000" stroke-width="1.03" points="16 7 10 13 4 7"></polyline></svg></span><a class="uk-margin-small-right" href="#imprint">Impressum</a></li>
@@ -17,47 +19,18 @@ description: CORAL Project Impressum.
         </div>
     </div>
     <div class="uk-container uk-margin-medium">
-        <h2 id="imprint" class="uk-margin-remove-top">Impressum</h2>
-        <h3><strong>Institut für Angewandte Informatik (InfAI)&nbsp;e. V.</strong></h3>
-        <p>Goerdelerring 9<br>04109 Leipzig</p>
-        <p>Telefon: +49 341 229037 0<br>Telefax: +49 341 229037 99<br>E-Mail:&nbsp;<a href="mailto:info@infai.org">info@infai.org</a></p>
-        <p>Vertretungsberechtigter Vorstand:<br>Prof. Dr. Bogdan Franczyk (1. Vorsitzender)<br>Prof. Dr. Erhard Rahm (2. Vorsitzender)<br>Prof. Dr. André Ludwig<br>Prof. Dr. Roland Fassauer</p>
-        <p>Vorstandsbeisitzer:<br>Prof. Dr. Sören Auer<br>Prof. Dr. Gerhard Heyer<br>Prof. Dr. Gerik Scheuermann</p>
-        <p>Geschäftsführung:<br>Ingolf Römer, Andreas Heinecke, Prof. Dr. Roland Fassauer</p>
-        <p>Registereintrag:<br>Registergericht: Amtsgericht Leipzig<br>Registernummer: VR 4342</p>
-        <p>Umsatzsteuer-ID:<br>Umsatzsteuer-Identifikationsnummer nach §27a Umsatzsteuergesetz:<br>DE274344504</p>
-
-        <h3><strong>InfAI Infinity GmbH</strong></h3>
-        <p>Goerdelerring 9<br>04109 Leipzig</p>
-        <p>Telefon: +49 341 229037 0<br>Telefax: +49 341 229037 99<br>E-Mail:&nbsp;<a href="mailto:info@infai.org">info@infai.org</a></p>
-        <p>Geschäftsführung:<br>Ingolf Römer, Andreas Heinecke</p>
-        <p>Registereintrag:<br>Registergericht: Amtsgericht Leipzig<br>Registernummer: HRB 41024</p>
-        <p>Umsatzsteuer-ID:<br>Umsatzsteuer-Identifikationsnummer nach §27a Umsatzsteuergesetz:</p>
-
-       <h3><strong>InfAI Management GmbH</strong></h3>
-       <p>Goerdelerring 9<br>04109 Leipzig</p>
-       <p>Telefon: +49 341 229037 0<br>Telefax: +49 341 229037 99<br>E-Mail:&nbsp;<a href="mailto:info@infai.org">info@infai.org</a></p>
-       <p>Geschäftsführung:<br><span>Michael Fiedler</span></p>
-       <p>Registereintrag:<br>Registergericht: Amtsgericht Leipzig<br>Registernummer: HRB 31783</p>
-       <p>Umsatzsteuer-ID:<br>Umsatzsteuer-Identifikationsnummer nach §27a Umsatzsteuergesetz:<br>DE301550288</p>
-
-       <h3>Hinweis gemäß Online-Streitbeilegungs-Verordnung</h3>
-       <p>Nach geltendem Recht sind wir verpflichtet, Verbraucher auf die Existenz der Europäischen Online-Streitbeilegungs-Plattform hinzuweisen, die für die Beilegung von Streitigkeiten genutzt werden kann, ohne dass ein Gericht eingeschaltet werden muss. Für die Einrichtung der Plattform ist die Europäische Kommission zuständig. Die Europäische Online-Streitbeilegungs-Plattform ist hier zu finden:&nbsp;<a href="http://ec.europa.eu/odr">http://ec.europa.eu/odr</a>. Unsere E-Mail lautet:&nbsp;<a href="mailto:info@infai.org">info@infai.org</a></p>
-
-       <h3>Hinweis gemäß Verbraucherstreitbeilegungsgesetz (VSBG)</h3>
-       <p>Wir sind nicht bereit und verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-       <h3>Verantwortlicher für journalistisch-redaktionelle Inhalte gem. § 55 II RstV:</h3>
-       <p>Tower PR<br>Heiner Schaumann<br>Mälzerstraße 3<br>07745 Jena<br>Tel: +49 (0) 3641 – 8761180<br>Fax: +49 (0) 3641 – 8761188<br><a href="mailto:info@tower-pr.com">info@tower-pr.com</a><br><a href="https://tower-pr.com/impressum/www.tower-pr.com">www.tower-pr.com</a></p>
+        <h2 id="imprint" class="uk-margin-remove-top">Imprint</h2>
+        {% include imprint/infai.html %}
     </div>
     <div class="uk-container uk-margin-medium"><hr></div>
     <div class="uk-container uk-margin-medium">
-        <h2 id="contact" class="uk-margin-remove-top">Kontakt</h2>
-        <p><b>Verbundleitung</b><br>Prof. Dr. Gerhard Heyer<br>Telefon: <span>+49 341 97322 31</span><br>E-Mail: <a href="mailto:heyer@infai.org" target="_blank" rel="noopener">heyer@infai.org</a></p>
+        <h2 id="contact" class="uk-margin-remove-top">Contact</h2>
+        <p><b>Project Coordination</b><br>Prof. Dr. Gerhard Heyer<br>Phone: <span>+49 341 97322 31</span><br>Email: <a href="mailto:heyer@infai.org" target="_blank" rel="noopener">heyer@infai.org</a></p>
 
     </div>
     <div class="uk-container uk-margin-medium"><hr></div>
     <div class="uk-container uk-margin-medium">
-        <h2 id="disclaimer" class="uk-margin-remove-top">Disclaimer – rechtliche Hinweise</h2>
+        <h2 id="disclaimer" class="uk-margin-remove-top">Disclaimer – Legal Notice</h2>
         <p>§ 1 Warnhinweis zu Inhalten<br>Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte interner Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.</p>
         <p>§ 2 Externe Links</p>
         <p>Diese Website enthält Verknüpfungen zu Websites Dritter („externe Links“). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.</p>
@@ -68,7 +41,7 @@ description: CORAL Project Impressum.
     </div>
     <div class="uk-container uk-margin-medium"><hr></div>
     <div class="uk-container uk-margin-medium">
-        <h2 id="aboutus">Konsortium</h2>
+        <h2 id="aboutus">Consortium</h2>
         <ul>
             <li>Institute für Angewandte Informatik e.V. <span class="uk-padding-small">&bullet;</span> <em>Prof. Gerhard Heyer</em></li>
             <li>Universität Kassel <span class="uk-padding-small">&bullet;</span> <em>Prof. Dr. Martin Potthast</em></li>
@@ -76,7 +49,7 @@ description: CORAL Project Impressum.
             <li>Deutsche Nationalbibliothek <span class="uk-padding-small">&bullet;</span> <em>Dr. Peter Leinen</em></li>
         </ul>
         
-        <h2>Assoziierte Partner</h2>
+        <h2>Associated Partners</h2>
         <ul>
             <li>Deutsche Bundesbank</li>
             <li>Source Kitchen GmbH</li>

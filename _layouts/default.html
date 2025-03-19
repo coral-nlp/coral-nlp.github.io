@@ -66,7 +66,11 @@
               <a href="https://github.com/coral-project">
                 <span data-uk-icon="icon: github; ratio:0.8"></span></a>
                 <span class="uk-padding-small">&bullet;</span>
-              <a href="{{ '/legal.html' | relative_url }}">Impressum / Kontakt / Disclaimer</a>
+                  {% if page.lang == 'en' %}
+                    <a href="{{ '/imprint_en.html' | relative_url }}">Imprint / Contact / Disclaimer</a>
+                  {% else %}
+                    <a href="{{ '/imprint.html' | relative_url }}">Impressum / Kontakt / Disclaimer</a>
+                  {% endif %}
               <span class="uk-padding-small">&bullet;</span>
                 {%- include lang-switcher.html -%}
             </div>
