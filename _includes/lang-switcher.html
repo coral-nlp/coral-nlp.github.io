@@ -1,0 +1,7 @@
+<!-- https://www.guido-flohr.net/multilang-with-jekyll/ -->
+{% assign posts=site.pages | where:"page_name", page.page_name | sort: 'path' %}
+{% for post in posts %}
+  {% if page.lang != post.lang %}
+    <a href="{{ post.url }}" class="{{ post.lang }}">{% if post.lang == 'en'}Deutsch{% else %}English{% endif %}</a>
+  {% endif %}
+{% endfor %}
