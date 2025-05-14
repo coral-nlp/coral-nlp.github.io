@@ -7,77 +7,171 @@ lang: de
 page_name: index
 ---
 
-<main class="uk-section uk-section-default"  uk-height-viewport="expand: true">
-    <div class="uk-container">
-        <div class="uk-container uk-margin-small">
-
-            <h1 class="uk-margin-remove-top">
-                Fundierte Sprachmodelle auf proprietären Daten</h1>
-            <div>
-            <ul class="uk-list">
-                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#goals">Projektziele</a></li>
-                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#events">Events</a></li>
-                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#publications">Publikationen</a></li>
-                <li><span data-uk-icon="chevron-down"></span><a class="uk-margin-small-right" href="#partners">Partner</a></li>  
-            </ul>
-            </div>
-        </div>
-
-        <div class="uk-container uk-margin-medium">
-
-            <h2 id="goals">Projektziele</h2>
-            
-            <p>Die Nutzung von Sprachmodellen unterliegt häufig einschränkenden Anforderungen, sogenannten Constraints. Wenn zum Beispiel lizenzrechtlich beschränkte Daten für das Training verwendet werden, sollen diese regelmäßig nicht in künstlich generierten Texten reproduziert werden. Aussagen in generierten Texten sollen darüber hinaus anhand von Quellen transparent nachvollziehbar sein. Solche und ähnliche Anforderungen sind für viele Institutionen und Unternehmen unverzichtbar für den produktiven und sicheren Einsatz von Sprachmodellen. Die Frage ist also, ob und wie Constraints bei der Konstruktion von Sprachmodellen berücksichtigt werden können. Genau hier setzt das Forschungsvorhaben „CORAL“ an und will Künstliche Intelligenz flexibler, resilienter und effizienter gestalten.</p>
-
-            <div class="uk-grid-small uk-child-width-1-2@m uk-child-width-1-1@s goals-image" uk-grid>
-                <img class="uk-preserve-width" src="{{ '/img/coral-illustration-small.png' | relative_url }}" alt="Coral Illustration"/>
-                <div>
-                    <h3>Vorgehen</h3>
-                    <p>Das Projekt untersucht, ob praktisch nutzbare Sprachmodelle auf Basis von Texten trainiert werden können, die nur in verschiedenen eingeschränkten Formen zur Verfügung gestellt werden dürfen. Außerdem werden Methoden entwickelt, um Texte unter Berücksichtigung von Fachwissen mit Quellenangaben zu generieren. Insbesondere soll die Textreproduktion aus den Trainingsdaten vermieden, jedoch vorgegebene Quellen akkurat wiedergeben, werden. Diese Verfahren werden in aufwendigen Experimenten evaluiert und mit Partnern aus dem Finanzwesen, GLAM-Institutionen (Kultur- und Gedächtnisinstitutionen) und der Privatwirtschaft getestet.</p>
-
-                    <h3>Innovationen und Perspektiven</h3>
-                    <p>Erwartet werden innovative Ergebnisse und Erkenntnisse in drei Kernabschnitten bei der Entwicklung und Nutzung von Sprachmodellen, sowohl in der Gesellschaft, Wissenschaft als auch Industrie: (1) Berücksichtigung bisher eingeschränkter Trainingsdaten; (2) Modellarchitekturen unter Berücksichtigung von Constraints, die u.a. die Reproduktion von Trainingsdaten vermeiden und (3) Verweis auf relevante und verlässliche Quellen, auf die der generierte Text basiert. Durch den exemplarischen Transfer dieser Ansätze werden Flexibilität als auch Effektivität sicher demonstriert.</p>
-                </div>
-            </div>
-
-            <h2 id="events">Events</h2>
-            <p>Invited talk. Retrieval Technologies for the Infinite Index. Martin Potthast at the 21st Conference on Database Systems for Business, Technology and Web (BTW) in Bamberg in March 2025.</p>
-
-            <h2 id="publications">Publikationen</h2>
-            <p>tba.</p>
-
-            <h2 id="partners">Partner</h2>
-
-            <h3>Institute für Angewandte Informatik e.V.</h3>
-            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
-                {% include people-cards/heyer.html %}
-                {% include people-cards/schroeder.html %}
-                {% include people-cards/stadler.html %}
-                {% include people-cards/binder.html %}
-            </div>
-
-            <h3>University of Kassel</h3>
-            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
-                {% include people-cards/potthast.html %}
-                {% include people-cards/gienapp.html %}
-                {% include people-cards/wiegmann.html %}
-                {% include people-cards/ruth.html %}
-            </div>
-
-            <h3>Hochschule Anhalt</h3>
-            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
-                {% include people-cards/haenig.html %}
-                {% include people-cards/hamotskyi.html %}
-                {% include people-cards/gautam.html %}
-            </div>
-
-            <h3>Deutsche Nationalbibliothek</h3>
-            <div data-uk-grid class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid">
-                {% include people-cards/leinen.html %}
-                {% include people-cards/genet.html %}
-            </div>
-
-
-        </div>
+<main class="uk-section uk-section-default" uk-height-viewport="expand: true">
+  <div class="uk-container">
+    <div class="uk-container uk-margin-small">
+      <h1 class="uk-margin-remove-top">
+        Fundierte Sprachmodelle auf proprietären Daten
+      </h1>
+      <div>
+        <ul class="uk-list">
+          <li>
+            <span data-uk-icon="chevron-down"></span
+            ><a class="uk-margin-small-right" href="#goals">Projektziele</a>
+          </li>
+          <li>
+            <span data-uk-icon="chevron-down"></span
+            ><a class="uk-margin-small-right" href="#events">Events</a>
+          </li>
+          <li>
+            <span data-uk-icon="chevron-down"></span
+            ><a class="uk-margin-small-right" href="#publications"
+              >Publikationen</a
+            >
+          </li>
+          <li>
+            <span data-uk-icon="chevron-down"></span
+            ><a class="uk-margin-small-right" href="#partners">Partner</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <div class="uk-container uk-margin-medium">
+      <h2 id="goals">Projektziele</h2>
+
+      <p>
+        Die Nutzung von Sprachmodellen unterliegt häufig einschränkenden
+        Anforderungen, sogenannten Constraints. Wenn zum Beispiel
+        lizenzrechtlich beschränkte Daten für das Training verwendet werden,
+        sollen diese regelmäßig nicht in künstlich generierten Texten
+        reproduziert werden. Aussagen in generierten Texten sollen darüber
+        hinaus anhand von Quellen transparent nachvollziehbar sein. Solche und
+        ähnliche Anforderungen sind für viele Institutionen und Unternehmen
+        unverzichtbar für den produktiven und sicheren Einsatz von
+        Sprachmodellen. Die Frage ist also, ob und wie Constraints bei der
+        Konstruktion von Sprachmodellen berücksichtigt werden können. Genau hier
+        setzt das Forschungsvorhaben „CORAL“ an und will Künstliche Intelligenz
+        flexibler, resilienter und effizienter gestalten.
+      </p>
+
+      <div
+        class="uk-grid-small uk-child-width-1-2@m uk-child-width-1-1@s goals-image"
+        uk-grid
+      >
+        <img
+          class="uk-preserve-width"
+          src="{{ '/img/coral-illustration-small.png' | relative_url }}"
+          alt="Coral Illustration"
+        />
+        <div>
+          <h3>Vorgehen</h3>
+          <p>
+            Das Projekt untersucht, ob praktisch nutzbare Sprachmodelle auf
+            Basis von Texten trainiert werden können, die nur in verschiedenen
+            eingeschränkten Formen zur Verfügung gestellt werden dürfen.
+            Außerdem werden Methoden entwickelt, um Texte unter Berücksichtigung
+            von Fachwissen mit Quellenangaben zu generieren. Insbesondere soll
+            die Textreproduktion aus den Trainingsdaten vermieden, jedoch
+            vorgegebene Quellen akkurat wiedergeben, werden. Diese Verfahren
+            werden in aufwendigen Experimenten evaluiert und mit Partnern aus
+            dem Finanzwesen, GLAM-Institutionen (Kultur- und
+            Gedächtnisinstitutionen) und der Privatwirtschaft getestet.
+          </p>
+
+          <h3>Innovationen und Perspektiven</h3>
+          <p>
+            Erwartet werden innovative Ergebnisse und Erkenntnisse in drei
+            Kernabschnitten bei der Entwicklung und Nutzung von Sprachmodellen,
+            sowohl in der Gesellschaft, Wissenschaft als auch Industrie: (1)
+            Berücksichtigung bisher eingeschränkter Trainingsdaten; (2)
+            Modellarchitekturen unter Berücksichtigung von Constraints, die u.a.
+            die Reproduktion von Trainingsdaten vermeiden und (3) Verweis auf
+            relevante und verlässliche Quellen, auf die der generierte Text
+            basiert. Durch den exemplarischen Transfer dieser Ansätze werden
+            Flexibilität als auch Effektivität sicher demonstriert.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="events">Events</h2>
+      <p>
+        Invited talk. Retrieval Technologies for the Infinite Index. Martin
+        Potthast at the 21st Conference on Database Systems for Business,
+        Technology and Web (BTW) in Bamberg in March 2025.
+      </p>
+
+      <h2 id="publications">Publikationen</h2>
+      <div>
+        Lukas Gienapp, Tim Hagen, Maik Fröbe, Matthias Hagen, Benno Stein,
+        Martin Potthast, and Harrisen Scells.
+        <a
+          class="paper"
+          href="https://downloads.webis.de/publications/papers/gienapp_2025a.pdf"
+          ><span class="title"
+            >The Viability of Crowdsourcing for RAG Evaluation</span
+          ></a
+        >. In
+        <span class="booktitle"
+          >48th International ACM SIGIR Conference on Research and Development
+          in Information Retrieval (SIGIR 2025)</span
+        >, <span class="month">July</span> <span class="year">2025</span>.
+        <span class="publisher">ACM</span>. [<a
+          class="arxiv"
+          href="https://arxiv.org/abs/2504.15689"
+          >arxiv</a
+        >] [<a
+          class="code"
+          href="https://github.com/webis-de/sigir25-rag-crowdsourcing"
+          >code</a
+        >] [<a
+          class="data"
+          href="https://zenodo.org/records/14748980"
+          >data</a
+        >] [<a class="doi" href="https://doi.org/10.1145/3726302.3730093">doi</a
+        >]
+
+      </div>
+
+      <h2 id="partners">Partner</h2>
+
+      <h3>Institute für Angewandte Informatik e.V.</h3>
+      <div
+        data-uk-grid
+        class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid"
+      >
+        {% include people-cards/heyer.html %} {% include
+        people-cards/schroeder.html %} {% include people-cards/stadler.html %}
+        {% include people-cards/binder.html %}
+      </div>
+
+      <h3>University of Kassel</h3>
+      <div
+        data-uk-grid
+        class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid"
+      >
+        {% include people-cards/potthast.html %} {% include
+        people-cards/gienapp.html %} {% include people-cards/wiegmann.html %} {%
+        include people-cards/ruth.html %}
+      </div>
+
+      <h3>Hochschule Anhalt</h3>
+      <div
+        data-uk-grid
+        class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid"
+      >
+        {% include people-cards/haenig.html %} {% include
+        people-cards/hamotskyi.html %} {% include people-cards/gautam.html %}
+      </div>
+
+      <h3>Deutsche Nationalbibliothek</h3>
+      <div
+        data-uk-grid
+        class="uk-grid uk-grid-match uk-grid-small thumbnail-card-grid"
+      >
+        {% include people-cards/leinen.html %} {% include
+        people-cards/genet.html %}
+      </div>
+    </div>
+  </div>
 </main>
