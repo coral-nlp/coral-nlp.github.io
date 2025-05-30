@@ -1,6 +1,6 @@
 # Website for the CORAL Project
 
-https://coral-project.github.io
+https://coral-nlp.github.io
 
 ### Build the Website Locally
 
