@@ -45,7 +45,11 @@
             </div>
             <div>
                 <a href="https://www.bmbf.de/DE/Home/home_node.html" target="_blank">
-                    <img class="uk-height-small" src="{{ '/img/BMBF_gefoerdert_2017_en.jpg' | relative_url }}" alt="Sponsored by the Federal Ministry of Education and Research">  
+			{% if page.lang == 'en' %}
+			<img class="uk-height-small" src="{{ '/img/BMFTR_en.png' | relative_url }}" alt="Sponsored by the Federal Ministry of Education and Research">  
+			{% else %}
+			<img class="uk-height-small" src="{{ '/img/BMFTR_de.jpg' | relative_url }}" alt="Gefördert durch das Bundesministerium für Bildung und Forschung">  
+			{% endif %}
                 </a>
             </div>
         </div>
